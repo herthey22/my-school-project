@@ -1,0 +1,353 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: opx;
+}
+body{
+    font-family: Georgia;
+}
+
+
+/*on screen that are 414px wide or lesser
+@media screen and (max-width: 414px) {
+    .nav_bar{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        list-style: relative;
+        background-color: teal;
+        padding: 12px 60px;          
+}
+nav a{
+    
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu-wrap{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.menu-wrap .toggler{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+.menu-wrap .hamburger{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    padding: 1rem;
+    width: 40px;
+    height: 40px;
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+
+}
+/*hamburger middle line
+.menu-wrap .hamburger > div{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: transform 0.4s ease;
+}
+/* hamburger top and buttom
+.menu-wrap .hamburger > div::before,.menu-wrap .hamburger > div::after{
+    content: "";
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background-color: inherit;
+}
+/*moves line down
+.menu-wrap .hamburger > div::after{
+    top: 10px;
+}
+/*toggler animation*
+.menu-wrap .toggler:checked + .hamburger>div{
+    transform: rotate(135deg);
+}
+/*turn line into X*
+.menu-wrap .toggler:checked + .hamburger>div::before,
+.menu-wrap .toggler:checked + .hamburger>div::after{
+    top: 0;
+    transform: rotate(90deg);
+}
+.menu-wrap .toggler:checked:hover + .hamburger>div{
+    transform: rotate(225deg);
+}
+/*show menu*
+.menu-wrap .toggler:checked ~ .menu{
+    visibility: visible;
+}
+/*rotate on over when checked*
+.menu-wrap .toggler:checked ~ .menu> div{
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+.menu-wrap .toggler:checked ~ .menu> div > div{
+    opacity: 1;
+    transition: opacity 0.45s ease;
+}
+.menu-wrap .menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 20%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    justify-self: center;
+
+}
+.menu-wrap .menu>div{
+    background-color: rgb(8, 228, 228);
+    width: 200vw;
+    overflow: hidden;
+    display: flex;
+    flex: none;
+    border-radius: 3%;
+    transition: all 0.4s ease;
+}
+.menu-wrap .menu > div > div{
+    max-width: 90vw;
+    max-height: 800vw;
+    text-align: center;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+.menu-wrap .menu > div > div > ul > li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+.menu-wrap .menu > div > div > ul > li > a{
+    transition: color 0.4s ease;
+}
+
+ }
+
+
+    
+
+
+/*on screen that are 1024px wide or lesser*
+@media screen and (min-width: 769px) {*/
+
+    .main1 {
+        background-image: url(./bg\ image\ 2.jpg);
+        background-size: cover;  
+    }
+    .nav_bar img{
+        margin-top: 20px;
+    }
+
+    .nav_bar{
+        display: flex;
+        justify-content: space-between;
+        /*background-color: orange;*/
+        padding: 12px 60px;
+        padding-bottom: 2px;
+        padding-top: 5px;
+        
+    
+        
+    }
+    .nav_bar h2{
+        text-transform: uppercase;
+        font-family: cursive;
+        margin-right: 300px;
+        color: white;
+        margin-top: 20px;
+        font-size: 30px;
+
+    }
+    nav a{
+        font-size: 17px;
+        text-decoration: none;
+        color: white;
+        
+    }
+    .menu ul{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        margin-top: 10px;
+    }
+    .menu ul li{
+        text-transform: uppercase;
+        padding-top: 30px;
+        
+    }
+    .menu-wrap .toggler{
+        display: none;
+    }
+    .menu-wrap .menu > div > div > ul > li{
+        list-style: none;
+    }
+    .menu li a:hover {
+        background-color:#f32020;
+        color: white;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 30px rgb(0 0 0 / 10%);
+    }
+    /* the sub courses should not show in the main menu (target the main menu and sub course)*/
+    .menu .sub-courses{
+        display: none;
+    
+    } 
+    /* the listing dot  of the sub-courses should not show  by targetting the main menu and sub-courses*/
+    .menu .sub-courses ul li{
+    list-style: none;
+    
+    }
+
+    /* color of the sub-courses by targetting main menu and sub courses*/
+    .menu .sub-courses ul li a{
+        color: black;
+    }
+    /* the subcourses color when hover changes from black to white*/
+    .menu .sub-courses a:hover{
+        color: aliceblue;
+
+    }
+    /*the background color, padding, displaying the courses under, of the subcourses */
+      .menu ul li:hover .sub-courses{
+        display: block;
+        position: absolute;
+        background-color: orange;
+        margin-top: 2px;
+        margin-left: -50px;
+        padding-left: 4px;
+        padding-right: 30px;
+        padding-top: 2px;
+        padding-bottom: 20px;
+        border-radius: 5px;
+    }
+    
+    /*making the courses to be in a row and not column(target main menu, mainmenu ul li hover, then sub courses ul)*/
+    .menu-wrap .menu ul li:hover .sub-courses ul{
+        display: inline-block;
+    }
+
+    .menu-wrap .menu ul li:hover .sub-courses ul li{
+        border-bottom: 1px  black;
+    }
+
+
+
+/* section up*/
+
+    .up{
+        display: flex;
+        justify-content: space-around;
+        margin-left: 80px;
+        margin-right: 60px;
+        margin-top: 100px;
+        
+    }
+    .up_a img{
+        border-radius: 350px;
+        margin-bottom: 20px;
+        border: 10px solid white;
+    }
+     
+    .up_a .button{
+        margin-bottom: 150px;
+        margin-left: 180px;
+        
+        
+    }
+
+    button{
+        width: 100px; 
+        height: 30px;
+        font-size: 20px;
+        padding-top: 5px;
+        padding-bottom: 35px;
+        
+    }
+    .up_b{
+        margin-top: 60px;
+        margin-left: 180px;
+        text-transform: uppercase;
+        
+        
+    }
+     .bi{
+        margin-bottom: 50px ;
+        display: flex;
+    }
+    .bib{
+        margin-top: 40px;
+        text-transform: lowercase;
+        margin-left: 20px;
+        font-style: italic;
+        margin-bottom: 50px;
+    
+    }
+    .bii h2{
+        margin-bottom: 20px;
+        
+    }
+    .bii p{
+        line-height: 25px;
+        font-family: cursive;
+    }
+
+
+
+/* section down*/
+    .down{
+        text-align: center;
+    
+    }
+    .down_a h2{
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    .down_a img{
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+    .down_a p{
+        margin-left: 130px;
+        margin-right: 100px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
