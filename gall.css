@@ -337,7 +337,9 @@ nav a{
         line-height: 30px;
     }
 
-
+    .contact_a{
+        display: flex;
+    }
     .footer_a{
         padding-left: 5%;
         padding-top: 2%;
