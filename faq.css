@@ -57,6 +57,7 @@ h1 {
   .accordion .content {
     position: relative;
     background: white;
+    border-radius: 10px;
     height: 0;
     font-size: 20px;
     text-align: justify;
@@ -79,6 +80,7 @@ h1 {
   /* Unhides the content part when active. Sets the height */
 
 .accordion .container.active .content {
+  padding-top: 20px;
   height: 150px;
 }
 
