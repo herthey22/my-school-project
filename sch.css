@@ -425,6 +425,15 @@ nav a{
     }
 
 
+
+    .faq{
+        top: 20px;
+        margin: 100px;    
+    }
+
+    .faq img{
+        border-radius: 50px;
+    }
     .contact_a{
         display: flex;
     }
